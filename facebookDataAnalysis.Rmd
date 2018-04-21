@@ -1,0 +1,1154 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  <link rel="dns-prefetch" href="https://assets-cdn.github.com">
+  <link rel="dns-prefetch" href="https://avatars0.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars1.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars2.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars3.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com">
+  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
+
+
+
+  <link crossorigin="anonymous" media="all" integrity="sha512-eYhUAIv4O/68uoHkCtYXVTxc5Q92+NKMtOryYR5Svt7vDp34XkrggN5j4lrKyiB0B2HUyrAYvAb3tlhmFGhivg==" rel="stylesheet" href="https://assets-cdn.github.com/assets/frameworks-592c4aa40e940d1b0607a3cf272916ff.css" />
+  <link crossorigin="anonymous" media="all" integrity="sha512-tAb2Jg5owcau6P+YFTlebsFvybAeFaii7FoIIuYEtgu+esY8+SX6Xhyw3fXb+f9QB6wwivUzgoXXwO8ZteApKA==" rel="stylesheet" href="https://assets-cdn.github.com/assets/github-fdbbae74da4136fd4258a92eb943be60.css" />
+  
+  
+  
+  
+
+  <meta name="viewport" content="width=device-width">
+  
+  <title>AnalysefacebookData/facebookDataAnalysis.Rmd at master · sum9759/AnalysefacebookData</title>
+    <meta name="description" content="GitHub is where people build software. More than 27 million people use GitHub to discover, fork, and contribute to over 80 million projects.">
+  <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+  <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+  <meta property="fb:app_id" content="1401488693436528">
+
+    
+    <meta property="og:image" content="https://avatars1.githubusercontent.com/u/35926343?s=400&amp;v=4" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="sum9759/AnalysefacebookData" /><meta property="og:url" content="https://github.com/sum9759/AnalysefacebookData" /><meta property="og:description" content="AnalysefacebookData - This project was done in collaboration with another person" />
+
+  <link rel="assets" href="https://assets-cdn.github.com/">
+  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MjY4Nzc0MjUxOjkxNDE1MThhYWE0YTcwNzA0YzExYjFmNjg5NTc4MDY1ODA5NDM5OTNlNjE0NzNkYTc1NWFjY2EyM2ZmOGY2Yzc=--e07a6f6aeee22b2ecf9a1a2f8fb3a4172795f4eb">
+  <meta name="pjax-timeout" content="1000">
+  <link rel="sudo-modal" href="/sessions/sudo_modal">
+  <meta name="request-id" content="D163:12DB:4822567:832AC6A:5ADBA3D3" data-pjax-transient>
+
+
+  
+
+  <meta name="selected-link" value="repo_source" data-pjax-transient>
+
+    <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+  <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+  <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
+    <meta name="google-analytics" content="UA-3769691-2">
+
+<meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-request_id" content="D163:12DB:4822567:832AC6A:5ADBA3D3" /><meta name="octolytics-dimension-region_edge" content="iad" /><meta name="octolytics-dimension-region_render" content="iad" /><meta name="octolytics-actor-id" content="28785603" /><meta name="octolytics-actor-login" content="ashfaqueazad" /><meta name="octolytics-actor-hash" content="b076ff77665e0c3f76d7c2608b70b687623cae1a735ae4afda2358d77fe6fe98" />
+<meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" />
+
+
+
+
+  <meta class="js-ga-set" name="dimension1" content="Logged In">
+
+
+  
+
+      <meta name="hostname" content="github.com">
+    <meta name="user-login" content="ashfaqueazad">
+
+      <meta name="expected-hostname" content="github.com">
+    <meta name="js-proxy-site-detection-payload" content="YTU2ZGFmNTg3MmZjZjRjMGQzNjIyNGU3ZDFiNzY2MzAyMmYxNmVjNDRjZmViNDk0ZTg1NzJjNzM5ZWFlMWUwM3x7InJlbW90ZV9hZGRyZXNzIjoiODkuMTI3LjE3LjE0MiIsInJlcXVlc3RfaWQiOiJEMTYzOjEyREI6NDgyMjU2Nzo4MzJBQzZBOjVBREJBM0QzIiwidGltZXN0YW1wIjoxNTI0MzQzNzc4LCJob3N0IjoiZ2l0aHViLmNvbSJ9">
+
+    <meta name="enabled-features" content="UNIVERSE_BANNER,FREE_TRIALS,MARKETPLACE_INSIGHTS,MARKETPLACE_SELF_SERVE,MARKETPLACE_INSIGHTS_CONVERSION_PERCENTAGES">
+
+  <meta name="html-safe-nonce" content="ccce32e0b4a92400b29cf5adab43a6c1f2a9d603">
+
+  <meta http-equiv="x-pjax-version" content="10c80ea533591cecc9bf0d03e9bbdc45">
+  
+
+      <link href="https://github.com/sum9759/AnalysefacebookData/commits/master.atom" rel="alternate" title="Recent Commits to AnalysefacebookData:master" type="application/atom+xml">
+
+  <meta name="description" content="AnalysefacebookData - This project was done in collaboration with another person">
+  <meta name="go-import" content="github.com/sum9759/AnalysefacebookData git https://github.com/sum9759/AnalysefacebookData.git">
+
+  <meta name="octolytics-dimension-user_id" content="35926343" /><meta name="octolytics-dimension-user_login" content="sum9759" /><meta name="octolytics-dimension-repository_id" content="130510644" /><meta name="octolytics-dimension-repository_nwo" content="sum9759/AnalysefacebookData" /><meta name="octolytics-dimension-repository_public" content="true" /><meta name="octolytics-dimension-repository_is_fork" content="false" /><meta name="octolytics-dimension-repository_network_root_id" content="130510644" /><meta name="octolytics-dimension-repository_network_root_nwo" content="sum9759/AnalysefacebookData" /><meta name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" content="false" />
+
+
+    <link rel="canonical" href="https://github.com/sum9759/AnalysefacebookData/blob/master/facebookDataAnalysis.Rmd" data-pjax-transient>
+
+
+  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+
+  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+
+  <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#000000">
+  <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico">
+
+<meta name="theme-color" content="#1e2327">
+
+
+  <meta name="u2f-support" content="true">
+
+<link rel="manifest" href="/manifest.json" crossOrigin="use-credentials">
+
+  </head>
+
+  <body class="logged-in env-production page-blob">
+    
+
+  <div class="position-relative js-header-wrapper ">
+    <a href="#start-of-content" tabindex="1" class="p-3 bg-blue text-white show-on-focus js-skip-to-content">Skip to content</a>
+    <div id="js-pjax-loader-bar" class="pjax-loader-bar"><div class="progress"></div></div>
+
+    
+    
+    
+
+
+
+        
+<header class="Header  f5" role="banner">
+  <div class="d-flex flex-justify-between px-3 container-lg">
+    <div class="d-flex flex-justify-between ">
+      <div class="">
+        <a class="header-logo-invertocat" href="https://github.com/" data-hotkey="g d" aria-label="Homepage" data-ga-click="Header, go to dashboard, icon:logo">
+  <svg height="32" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
+
+      </div>
+
+    </div>
+
+    <div class="HeaderMenu d-flex flex-justify-between flex-auto">
+      <div class="d-flex">
+            <div class="">
+              <div class="header-search scoped-search site-scoped-search js-site-search" role="search">
+  <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-site-search-form" data-scoped-search-url="/sum9759/AnalysefacebookData/search" data-unscoped-search-url="/search" action="/sum9759/AnalysefacebookData/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+    <label class="form-control header-search-wrapper  js-chromeless-input-container">
+          <a class="header-search-scope no-underline" href="/sum9759/AnalysefacebookData/blob/master/facebookDataAnalysis.Rmd">This repository</a>
+      <input type="text"
+        class="form-control header-search-input  js-site-search-focus js-site-search-field is-clearable"
+        data-hotkey="s,/"
+        name="q"
+        value=""
+        placeholder="Search"
+        aria-label="Search this repository"
+        data-unscoped-placeholder="Search GitHub"
+        data-scoped-placeholder="Search"
+        autocapitalize="off"
+        >
+        <input type="hidden" class="js-site-search-type-field" name="type" >
+    </label>
+</form></div>
+
+            </div>
+
+          <ul class="d-flex pl-2 flex-items-center text-bold list-style-none" role="navigation">
+            <li>
+              <a class="js-selected-navigation-item HeaderNavlink px-2" data-hotkey="g p" data-ga-click="Header, click, Nav menu - item:pulls context:user" aria-label="Pull requests you created" data-selected-links="/pulls /pulls/assigned /pulls/mentioned /pulls" href="/pulls">
+                Pull requests
+</a>            </li>
+            <li>
+              <a class="js-selected-navigation-item HeaderNavlink px-2" data-hotkey="g i" data-ga-click="Header, click, Nav menu - item:issues context:user" aria-label="Issues you created" data-selected-links="/issues /issues/assigned /issues/mentioned /issues" href="/issues">
+                Issues
+</a>            </li>
+                <li>
+                  <a class="js-selected-navigation-item HeaderNavlink px-2" data-ga-click="Header, click, Nav menu - item:marketplace context:user" data-selected-links=" /marketplace" href="/marketplace">
+                    Marketplace
+</a>                </li>
+            <li>
+              <a class="js-selected-navigation-item HeaderNavlink px-2" data-ga-click="Header, click, Nav menu - item:explore" data-selected-links="/explore /trending /trending/developers /integrations /integrations/feature/code /integrations/feature/collaborate /integrations/feature/ship showcases showcases_search showcases_landing /explore" href="/explore">
+                Explore
+</a>            </li>
+          </ul>
+      </div>
+
+      <div class="d-flex">
+        
+<ul class="user-nav d-flex flex-items-center list-style-none" id="user-links">
+  <li class="dropdown js-menu-container">
+    <span class="d-inline-block  px-2">
+      
+    <a aria-label="You have no unread notifications" class="notification-indicator tooltipped tooltipped-s  js-socket-channel js-notification-indicator" data-hotkey="g n" data-ga-click="Header, go to notifications, icon:read" data-channel="notification-changed:28785603" href="/notifications">
+        <span class="mail-status "></span>
+        <svg class="octicon octicon-bell" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 12v1H0v-1l.73-.58c.77-.77.81-2.55 1.19-4.42C2.69 3.23 6 2 6 2c0-.55.45-1 1-1s1 .45 1 1c0 0 3.39 1.23 4.16 5 .38 1.88.42 3.66 1.19 4.42l.66.58H14zm-7 4c1.11 0 2-.89 2-2H5c0 1.11.89 2 2 2z"/></svg>
+</a>
+    </span>
+  </li>
+
+  <li class="dropdown js-menu-container">
+    <details class="dropdown-details details-reset js-dropdown-details d-flex px-2 flex-items-center">
+      <summary class="HeaderNavlink"
+         aria-label="Create new…"
+         data-ga-click="Header, create new, icon:add">
+        <svg class="octicon octicon-plus float-left mr-1 mt-1" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 9H7v5H5V9H0V7h5V2h2v5h5z"/></svg>
+        <span class="dropdown-caret mt-1"></span>
+      </summary>
+
+      <ul class="dropdown-menu dropdown-menu-sw">
+        
+<a class="dropdown-item" href="/new" data-ga-click="Header, create new repository">
+  New repository
+</a>
+
+  <a class="dropdown-item" href="/new/import" data-ga-click="Header, import a repository">
+    Import repository
+  </a>
+
+<a class="dropdown-item" href="https://gist.github.com/" data-ga-click="Header, create new gist">
+  New gist
+</a>
+
+  <a class="dropdown-item" href="/organizations/new" data-ga-click="Header, create new organization">
+    New organization
+  </a>
+
+
+
+  <div class="dropdown-divider"></div>
+  <div class="dropdown-header">
+    <span title="sum9759/AnalysefacebookData">This repository</span>
+  </div>
+    <a class="dropdown-item" href="/sum9759/AnalysefacebookData/issues/new" data-ga-click="Header, create new issue">
+      New issue
+    </a>
+
+      </ul>
+    </details>
+  </li>
+
+  <li class="dropdown js-menu-container">
+
+    <details class="dropdown-details details-reset js-dropdown-details d-flex pl-2 flex-items-center">
+      <summary class="HeaderNavlink name mt-1"
+        aria-label="View profile and more"
+        data-ga-click="Header, show menu, icon:avatar">
+        <img alt="@ashfaqueazad" class="avatar float-left mr-1" src="https://avatars1.githubusercontent.com/u/28785603?s=40&amp;v=4" height="20" width="20">
+        <span class="dropdown-caret"></span>
+      </summary>
+
+      <ul class="dropdown-menu dropdown-menu-sw">
+        <li class="dropdown-header header-nav-current-user css-truncate">
+          Signed in as <strong class="css-truncate-target">ashfaqueazad</strong>
+        </li>
+
+        <li class="dropdown-divider"></li>
+
+        <li><a class="dropdown-item" href="/ashfaqueazad" data-ga-click="Header, go to profile, text:your profile">
+          Your profile
+        </a></li>
+        <li><a class="dropdown-item" href="/ashfaqueazad?tab=stars" data-ga-click="Header, go to starred repos, text:your stars">
+          Your stars
+        </a></li>
+          <li><a class="dropdown-item" href="https://gist.github.com/" data-ga-click="Header, your gists, text:your gists">Your gists</a></li>
+
+        <li class="dropdown-divider"></li>
+
+        <li><a class="dropdown-item" href="https://help.github.com" data-ga-click="Header, go to help, text:help">
+          Help
+        </a></li>
+
+        <li><a class="dropdown-item" href="/settings/profile" data-ga-click="Header, go to settings, icon:settings">
+          Settings
+        </a></li>
+
+        <li><!-- '"` --><!-- </textarea></xmp> --></option></form><form class="logout-form" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="6nQdKZAb+pZ3t8SghOYnL0V4YyACmlE9z2s4g6nNVIuDfhOyzC3REHjW3ipl/nvqg7giWgJr5QyzT5Rn2+mbnw==" />
+          <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
+            Sign out
+          </button>
+        </form></li>
+      </ul>
+    </details>
+  </li>
+</ul>
+
+
+
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="sr-only right-0" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="X+z/rLOs+5favhHzxHcrHqr0a4r3LvGVMFkWGgwJ9kk25vE375rQEdXfC3klb3fbbDQq8PffRaRMfbr+fi05XQ==" />
+          <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
+            Sign out
+          </button>
+</form>      </div>
+    </div>
+  </div>
+</header>
+
+      
+
+  </div>
+
+  <div id="start-of-content" class="show-on-focus"></div>
+
+    <div id="js-flash-container">
+</div>
+
+
+
+  <div role="main" class="application-main ">
+        <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="">
+    <div id="js-repo-pjax-container" data-pjax-container >
+      
+
+
+
+
+
+
+
+  <div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav  ">
+    <div class="repohead-details-container clearfix container">
+
+      <ul class="pagehead-actions">
+  <li>
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-autosubmit="true" data-remote="true" class="js-social-container" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="vUxkF0J5Eb6e/2gqvNHzm2Hkx2577KS6jhy6RK9MWKn/+I0/eAn0k81kgQAEe2KblKUOblc0ZLJE/RFuW58//A==" />      <input type="hidden" name="repository_id" id="repository_id" value="130510644" class="form-control" />
+
+        <div class="select-menu js-menu-container js-select-menu">
+          <a href="/sum9759/AnalysefacebookData/subscription"
+            class="btn btn-sm btn-with-count select-menu-button js-menu-target"
+            role="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-label="Toggle repository notifications menu"
+            data-ga-click="Repository, click Watch settings, action:blob#show">
+            <span class="js-select-button">
+                <svg class="octicon octicon-eye" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+                Watch
+            </span>
+          </a>
+          <a class="social-count js-social-count"
+            href="/sum9759/AnalysefacebookData/watchers"
+            aria-label="0 users are watching this repository">
+            0
+          </a>
+
+        <div class="select-menu-modal-holder">
+          <div class="select-menu-modal subscription-menu-modal js-menu-content">
+            <div class="select-menu-header js-navigation-enable" tabindex="-1">
+              <svg class="octicon octicon-x js-menu-close" role="img" aria-label="Close" viewBox="0 0 12 16" version="1.1" width="12" height="16"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+              <span class="select-menu-title">Notifications</span>
+            </div>
+
+              <div class="select-menu-list js-navigation-container" role="menu">
+
+                <div class="select-menu-item js-navigation-item selected" role="menuitem" tabindex="0">
+                  <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+                  <div class="select-menu-item-text">
+                    <input type="radio" name="do" id="do_included" value="included" checked="checked" />
+                    <span class="select-menu-item-heading">Not watching</span>
+                    <span class="description">Be notified when participating or @mentioned.</span>
+                    <span class="js-select-button-text hidden-select-button-text">
+                      <svg class="octicon octicon-eye" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+                      Watch
+                    </span>
+                  </div>
+                </div>
+
+                <div class="select-menu-item js-navigation-item " role="menuitem" tabindex="0">
+                  <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+                  <div class="select-menu-item-text">
+                    <input type="radio" name="do" id="do_subscribed" value="subscribed" />
+                    <span class="select-menu-item-heading">Watching</span>
+                    <span class="description">Be notified of all conversations.</span>
+                    <span class="js-select-button-text hidden-select-button-text">
+                      <svg class="octicon octicon-eye" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+                        Unwatch
+                    </span>
+                  </div>
+                </div>
+
+                <div class="select-menu-item js-navigation-item " role="menuitem" tabindex="0">
+                  <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+                  <div class="select-menu-item-text">
+                    <input type="radio" name="do" id="do_ignore" value="ignore" />
+                    <span class="select-menu-item-heading">Ignoring</span>
+                    <span class="description">Never be notified.</span>
+                    <span class="js-select-button-text hidden-select-button-text">
+                      <svg class="octicon octicon-mute" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 2.81v10.38c0 .67-.81 1-1.28.53L3 10H1c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1h2l3.72-3.72C7.19 1.81 8 2.14 8 2.81zm7.53 3.22l-1.06-1.06-1.97 1.97-1.97-1.97-1.06 1.06L11.44 8 9.47 9.97l1.06 1.06 1.97-1.97 1.97 1.97 1.06-1.06L13.56 8l1.97-1.97z"/></svg>
+                        Stop ignoring
+                    </span>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+</form>
+  </li>
+
+  <li>
+    
+  <div class="js-toggler-container js-social-container starring-container ">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" action="/sum9759/AnalysefacebookData/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="LaPAMy5VbJ9LNvz7rNdxV2tQqE++rJ74ttBO1GwTz2YqbAAaoDEX6FE1AzPnBecPr/Nus0QgxJMau84JwT5m+A==" />
+      <input type="hidden" name="context" value="repository"></input>
+      <button
+        type="submit"
+        class="btn btn-sm btn-with-count js-toggler-target"
+        aria-label="Unstar this repository" title="Unstar sum9759/AnalysefacebookData"
+        data-ga-click="Repository, click unstar button, action:blob#show; text:Unstar">
+        <svg class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"/></svg>
+        Unstar
+      </button>
+        <a class="social-count js-social-count" href="/sum9759/AnalysefacebookData/stargazers"
+           aria-label="0 users starred this repository">
+          0
+        </a>
+</form>
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" action="/sum9759/AnalysefacebookData/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="67pjPdfgGB2peu0pg5r0cRmIxCa87toPrnpAhAjJVObkwBA6+ZqVBN0iwaBUAymQA1k3Zp23uSMY8jjrP9RV5g==" />
+      <input type="hidden" name="context" value="repository"></input>
+      <button
+        type="submit"
+        class="btn btn-sm btn-with-count js-toggler-target"
+        aria-label="Star this repository" title="Star sum9759/AnalysefacebookData"
+        data-ga-click="Repository, click star button, action:blob#show; text:Star">
+        <svg class="octicon octicon-star" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"/></svg>
+        Star
+      </button>
+        <a class="social-count js-social-count" href="/sum9759/AnalysefacebookData/stargazers"
+           aria-label="0 users starred this repository">
+          0
+        </a>
+</form>  </div>
+
+  </li>
+
+  <li>
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="btn-with-count" action="/sum9759/AnalysefacebookData/fork" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="bJhk1hMnzLoM49MMqAk2WUMshhMAV7ourjnxpJSVPMOA2Leyv6Ieu6SwJnGYEBKew1UbI/zOmNJ90xbjb9yXwg==" />
+            <button
+                type="submit"
+                class="btn btn-sm btn-with-count"
+                data-ga-click="Repository, show fork modal, action:blob#show; text:Fork"
+                title="Fork your own copy of sum9759/AnalysefacebookData to your account"
+                aria-label="Fork your own copy of sum9759/AnalysefacebookData to your account">
+              <svg class="octicon octicon-repo-forked" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+              Fork
+            </button>
+</form>
+    <a href="/sum9759/AnalysefacebookData/network" class="social-count"
+       aria-label="0 users forked this repository">
+      0
+    </a>
+  </li>
+</ul>
+
+      <h1 class="public ">
+  <svg class="octicon octicon-repo" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+  <span class="author" itemprop="author"><a class="url fn" rel="author" href="/sum9759">sum9759</a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong itemprop="name"><a data-pjax="#js-repo-pjax-container" href="/sum9759/AnalysefacebookData">AnalysefacebookData</a></strong>
+
+</h1>
+
+    </div>
+    
+<nav class="reponav js-repo-nav js-sidenav-container-pjax container"
+     itemscope
+     itemtype="http://schema.org/BreadcrumbList"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container">
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a class="js-selected-navigation-item selected reponav-item" itemprop="url" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /sum9759/AnalysefacebookData" href="/sum9759/AnalysefacebookData">
+      <svg class="octicon octicon-code" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"/></svg>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a itemprop="url" data-hotkey="g i" class="js-selected-navigation-item reponav-item" data-selected-links="repo_issues repo_labels repo_milestones /sum9759/AnalysefacebookData/issues" href="/sum9759/AnalysefacebookData/issues">
+        <svg class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+        <span itemprop="name">Issues</span>
+        <span class="Counter">0</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a data-hotkey="g p" itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_pulls checks /sum9759/AnalysefacebookData/pulls" href="/sum9759/AnalysefacebookData/pulls">
+      <svg class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      <span itemprop="name">Pull requests</span>
+      <span class="Counter">0</span>
+      <meta itemprop="position" content="3">
+</a>  </span>
+
+    <a data-hotkey="g b" class="js-selected-navigation-item reponav-item" data-selected-links="repo_projects new_repo_project repo_project /sum9759/AnalysefacebookData/projects" href="/sum9759/AnalysefacebookData/projects">
+      <svg class="octicon octicon-project" viewBox="0 0 15 16" version="1.1" width="15" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
+      Projects
+      <span class="Counter" >0</span>
+</a>
+    <a class="js-selected-navigation-item reponav-item" data-hotkey="g w" data-selected-links="repo_wiki /sum9759/AnalysefacebookData/wiki" href="/sum9759/AnalysefacebookData/wiki">
+      <svg class="octicon octicon-book" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z"/></svg>
+      Wiki
+</a>
+
+  <a class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors dependency_graph pulse /sum9759/AnalysefacebookData/pulse" href="/sum9759/AnalysefacebookData/pulse">
+    <svg class="octicon octicon-graph" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"/></svg>
+    Insights
+</a>
+
+</nav>
+
+
+  </div>
+
+<div class="container new-discussion-timeline experiment-repo-nav  ">
+  <div class="repository-content ">
+
+    
+  <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/sum9759/AnalysefacebookData/blob/1bc33e024d8b4cd20754aa9c8d0be27c8751a426/facebookDataAnalysis.Rmd">Permalink</a>
+
+  <!-- blob contrib key: blob_contributors:v21:9947ee4024d0104e876b3f5c0a13c540 -->
+
+  <div class="file-navigation">
+    
+<div class="select-menu branch-select-menu js-menu-container js-select-menu float-left">
+  <button class=" btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w"
+    
+    type="button" aria-label="Switch branches or tags" aria-expanded="false" aria-haspopup="true">
+      <i>Branch:</i>
+      <span class="js-select-button css-truncate-target">master</span>
+  </button>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax>
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <svg class="octicon octicon-x js-menu-close" role="img" aria-label="Close" viewBox="0 0 12 16" version="1.1" width="12" height="16"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+        <span class="select-menu-title">Switch branches/tags</span>
+      </div>
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="form-control js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="branches" data-filter-placeholder="Filter branches/tags" class="js-select-menu-tab" role="tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="tags" data-filter-placeholder="Find a tag…" class="js-select-menu-tab" role="tab">Tags</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches" role="menu">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open selected"
+               href="/sum9759/AnalysefacebookData/blob/master/facebookDataAnalysis.Rmd"
+               data-name="master"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                master
+              </span>
+            </a>
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    <div class="BtnGroup float-right">
+      <a href="/sum9759/AnalysefacebookData/find/master"
+            class="js-pjax-capture-input btn btn-sm BtnGroup-item"
+            data-pjax
+            data-hotkey="t">
+        Find file
+      </a>
+      <clipboard-copy
+            for="blob-path"
+            aria-label="Copy file path to clipboard"
+            class="btn btn-sm BtnGroup-item tooltipped tooltipped-s"
+            copied-label="Copied!">
+        Copy path
+      </clipboard-copy>
+    </div>
+    <div id="blob-path" class="breadcrumb">
+      <span class="repo-root js-repo-root"><span class="js-path-segment"><a data-pjax="true" href="/sum9759/AnalysefacebookData"><span>AnalysefacebookData</span></a></span></span><span class="separator">/</span><strong class="final-path">facebookDataAnalysis.Rmd</strong>
+    </div>
+  </div>
+
+
+  <include-fragment src="/sum9759/AnalysefacebookData/contributors/master/facebookDataAnalysis.Rmd" class="commit-tease">
+    <div>
+      Fetching contributors&hellip;
+    </div>
+
+    <div class="commit-tease-contributors">
+      <img alt="" class="loader-loading float-left" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32-EAF2F5.gif" width="16" height="16" />
+      <span class="loader-error">Cannot retrieve contributors at this time</span>
+    </div>
+</include-fragment>
+
+
+  <div class="file">
+    <div class="file-header">
+  <div class="file-actions">
+
+    <div class="BtnGroup">
+      <a id="raw-url" class="btn btn-sm BtnGroup-item" href="/sum9759/AnalysefacebookData/raw/master/facebookDataAnalysis.Rmd">Raw</a>
+        <a class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b" href="/sum9759/AnalysefacebookData/blame/master/facebookDataAnalysis.Rmd">Blame</a>
+      <a rel="nofollow" class="btn btn-sm BtnGroup-item" href="/sum9759/AnalysefacebookData/commits/master/facebookDataAnalysis.Rmd">History</a>
+    </div>
+
+        <a class="btn-octicon tooltipped tooltipped-nw"
+           href="https://desktop.github.com"
+           aria-label="Open this file in GitHub Desktop"
+           data-ga-click="Repository, open with desktop, type:windows">
+            <svg class="octicon octicon-device-desktop" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M15 2H1c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5.34c-.25.61-.86 1.39-2.34 2h8c-1.48-.61-2.09-1.39-2.34-2H15c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 9H1V3h14v8z"/></svg>
+        </a>
+
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form js-update-url-with-hash" action="/sum9759/AnalysefacebookData/edit/master/facebookDataAnalysis.Rmd" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="df+/kawmYcNPY/k73m1Wzvmhyl1jXxaEOd5gNUvff7rVckA8YyQ18fPsEWtHDkY/24FO2gr8544cLDdmb92N8A==" />
+            <button class="btn-octicon tooltipped tooltipped-nw" type="submit"
+              aria-label="Fork this project and edit the file" data-hotkey="e" data-disable-with>
+              <svg class="octicon octicon-pencil" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 0 1 1.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"/></svg>
+            </button>
+</form>
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/sum9759/AnalysefacebookData/delete/master/facebookDataAnalysis.Rmd" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="fqZlPNIkoBH2tihB5R4uuCiC+vks4fnPHB9k0me6qxWHlg12RA6tgfg3Iwtj9X+rVzcOK66KlUa9JuL4suJD4A==" />
+          <button class="btn-octicon btn-octicon-danger tooltipped tooltipped-nw" type="submit"
+            aria-label="Fork this project and delete the file" data-disable-with>
+            <svg class="octicon octicon-trashcan" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"/></svg>
+          </button>
+</form>  </div>
+
+  <div class="file-info">
+      459 lines (328 sloc)
+      <span class="file-info-divider"></span>
+    19.9 KB
+  </div>
+</div>
+
+    
+  <div id="readme" class="readme blob instapaper_body">
+    <article class="markdown-body entry-content" itemprop="text"><table data-table-type="yaml-metadata">
+  <thead>
+  <tr>
+  <th>title</th>
+  <th>author</th>
+  <th>date</th>
+  <th>output</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+  <td><div>Analysing and Visualising Facebook Data</div></td>
+  <td><div>Suchandra Mandal and Ashfaque Azad</div></td>
+  <td><div>23 March 2018</div></td>
+  <td><div>html_document</div></td>
+  </tr>
+  </tbody>
+</table>
+
+<pre lang="{r"><code>knitr::opts_chunk$set(echo = TRUE)
+</code></pre>
+<h2><a id="user-content-introduction" class="anchor" aria-hidden="true" href="#introduction"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Introduction</h2>
+<p>For analysis of facebook posts on galway, We have used two facebook pages as my source, namely Connacht tribune and Galway Today. We have extracted data for last 6 months in order to look at what news has been trending in Galway for the last few months. Two news sources were used to provide better weighting to news related to storms like ophelia etc which occurred for only a week. Thus, having more frequency of those terms will give them a better tf-idf rank in the code later on.</p>
+<p>For now, let us load the required libraries.</p>
+<pre lang="{r}"><code># Loading all the required libraries
+library(Rfacebook)
+library(tm)
+library(topicmodels)
+library(RTextTools)
+library(dplyr)
+library(magrittr)
+library(SnowballC)
+library(sentimentr)
+library(ggplot2)
+library(ggthemes)
+library(wordcloud)
+library(stringr)
+options(warn = -1)
+</code></pre>
+<h2><a id="user-content-1-extracting-facebook-data" class="anchor" aria-hidden="true" href="#1-extracting-facebook-data"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>1. Extracting Facebook Data</h2>
+<p>We have used the facebook graph api here to extract public facebook posts from the news pages of Connacht Tribune and Galway Today from 22nd Aug, 2017 to 22nd Mar, 2018.After getting the data from the two news sources, both the dataframes were bounded together by rows since the number of columns for each is the same.</p>
+<p>Since token is private, we have provided the code we used to extract the data and downloaded that as a csv which we have loaded here.</p>
+<pre lang="{r}"><code>#Ashfaque Azad
+# token &lt;- '*****'
+
+#Getting data from public news pages:
+# an upper limit of 10000 was used to get all the data available between the time period stated 
+  # news &lt;- getPage("ConnachtTribune", token, n = 10000,
+  #                 since='2017/08/22', until='2018/03/22')
+  # news1 &lt;- getPage("galwaytoday1", token, n = 10000,
+  #                  since='2017/08/22', until='2018/03/22')
+   
+
+#Merging the two news dataframes into one all_news dataframe
+  # all_news &lt;- rbind(news, news1)
+  # write.csv(all_news, "All_news.csv")
+## Since token is private, the facebook data extracted is stored in csv and loaded here 
+all_news &lt;- read.csv("C:/Users/Suchandra/Documents/All_news.csv", stringsAsFactors = F)
+</code></pre>
+<h2><a id="user-content-cleaning-the-posts-extracted" class="anchor" aria-hidden="true" href="#cleaning-the-posts-extracted"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Cleaning the posts extracted</h2>
+<p>The posts extracted from facebook have many missing messages field, different cases in writing, smileys, emojis and special charcaters which are read in R as . These characters need to be removed before any further processing can be done on them.Also, words will be stemmed so as to prevent same words with singular and plural form being counted separately. Here, we have only considered all english words in language option and punctuations have been removed.</p>
+<pre lang="{r}"><code>#Suchandra Mandal
+# Removing all empty and NA entries in message field of the dataframe of all_news.
+g &lt;- all_news[!is.na(all_news$message),]
+
+# Making a dataframe of the columns we are interested in from the previous datafarme
+clean_data &lt;- g[,c('message','likes_count', 'comments_count', 'shares_count')]
+
+# Removing unwanted ascii characters from messages before processing
+clean_data$message &lt;- sapply(clean_data$message,function(row) iconv(row, "latin1", "ASCII", sub=""))
+
+# Converting all words in message to lower case
+clean_data$message &lt;- tolower(clean_data$message)
+</code></pre>
+<h2><a id="user-content-2-finding-out-relevant-keywords-from-the-posts-to-define-policies" class="anchor" aria-hidden="true" href="#2-finding-out-relevant-keywords-from-the-posts-to-define-policies"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. Finding out Relevant keywords from the posts to define policies</h2>
+<p>We have some 1227 posts in total after the cleaning process. To extract the relevant keywords in order to form policies out of it, we did not want to select the words manually. Instead, we used LDA(Latent Dirichlet allocation) model to classify our posts into different topics and thereby, find relevant keywords.</p>
+<p>For LDA model, we have used the library RtextTools. LDA is useful for finding topics and segregating the terms it comes across in unsupervised manner, that is, no previous training is required. The LDA needs input of posts in form of a document term matrix. We have used term frequency weighting scheme here to create my matrix of terms. We have kept 40 as the number of various topics We want to look at. Usually, to determine K perfectly, people use supervised learning from previosuly classified topics data which in this case, we do not have.</p>
+<p>Also, in order not to have any 0 entries in our matrix since that will get an error thrown by LDA model, we have calculated sum of the rows of matrix and if any row is 0, that is removed before the matrix is input the LDA model.</p>
+<pre lang="{r}"><code>#Suchandra Mandal
+# Remove overly common terms
+
+# We want to now remove overly common terms such as galway, etc which are present
+# in atleast more than 60% of the posts.
+remove_terms &lt;- function (data, threshold) 
+{
+  stopifnot(inherits(data, c("DocumentTermMatrix", "TermDocumentMatrix")), 
+            is.numeric(threshold), threshold &gt; 0, threshold &lt; 1)
+  m &lt;- if (inherits(data, "DocumentTermMatrix")) 
+    t(data)
+  else data
+  t &lt;- table(m$i) &lt; m$ncol * (threshold)
+  index &lt;- as.numeric(names(t[t]))
+  if (inherits(data, "DocumentTermMatrix")) 
+    data[, index]
+  else data[index, ]
+}
+
+
+# Creating the document term frequency matrix by excluding numbers, stopwords, punctuations etc
+matrix &lt;- create_matrix( as.vector(clean_data$message), 
+                        language="english", 
+                        removeNumbers=TRUE, 
+                        toLower = T,
+                        removePunctuation = T,
+                        removeStopwords = T,
+                        stemWords=TRUE, 
+                        weighting=weightTf)
+
+matrix &lt;- remove_terms(matrix,.6)
+# K is the number of topics I want LDA model to extract from the posts
+k &lt;- 40
+
+#sum by each row of the table
+raw.sum=apply(matrix,1,FUN=sum) 
+# Exclude all 0 rows
+matrix = matrix[raw.sum!=0,]
+
+# fitting our LDA model with expected number of topics
+lda &lt;- LDA(matrix,method = "Gibbs", k)
+
+# Groups the posts into different topics 
+get_topics &lt;- topicmodels::topics(lda, 10)
+
+## In this case I am returning the top 20 terms from each topic.
+get_terms &lt;- as.data.frame(topicmodels::terms(lda, 20), stringsAsFactors = FALSE)
+
+# extracting the top ten topics. I chose 10 topics since more than that, the words returned are not much useful or give any context
+f &lt;- get_terms[1:10]
+
+# Since some terms repeat across topics, taking a unique of the terms list
+unique_terms &lt;- unique(unlist(f,use.names = F))
+
+</code></pre>
+<h2><a id="user-content-finding-counts-of-the-various-terms-extracted-via-lda" class="anchor" aria-hidden="true" href="#finding-counts-of-the-various-terms-extracted-via-lda"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Finding counts of the various terms extracted via LDA</h2>
+<p>Next, we wanted to look at the counts of the terms extracted and remove overly common terms. The overly common terms have to be removed since even though, they are not stopwords, the semantic context they provide is very little. Words such as Galway, will, city etc are repeated in most posts. Thus, a function was written next to remove overly common terms and a threshold was set to remove them. For the current posts, a threshold of 0.6 was kept. This means if a word is repeated in more than 60% of posts, it is not unqiue to some events and is overly common.</p>
+<p>After this, we decile the terms and group the terms according to their counts in 10 bins. This is done in order to select the keywords from the different bins</p>
+<pre lang="{r}"><code>#Ashfaque Azad
+# creating a dataframe which stores the unique terms and a column count which will store the counts of each term in posts
+counts &lt;- data.frame(unique_terms,count = 0, stringsAsFactors = F)
+
+# counting the occurence of terms in posts
+for (i in 1:nrow(counts)){
+  counts$count[i] &lt;- sum(grepl(counts$unique_terms[i], clean_data$message))
+}
+
+# Removing count with 0 since only special charcters will be prsent as this is a 
+# subset of all messages so there must be 1 occurence
+counts &lt;- counts %&gt;% filter(count&gt;0) %&gt;% arrange(count)
+
+#print(counts)
+
+
+
+
+# Putting the terms into different bins based on count
+counts$bins &lt;- ntile(counts$count,n = 10)
+
+# Randomly selecting terms from each of the bins.
+choose &lt;- counts %&gt;% group_by(bins) %&gt;% sample_n(2)
+#print(choose)
+</code></pre>
+<p>Picking interesting keywords from bins. Bin 10 has least intersting keywords since the keywords which occur in about 59% of the posts will not have much of news relevance. In contrast, bin 1 to 7 have most interesting keywords</p>
+<p>The final set of relevant keywords chosen are news related keywords from the count and choose dataframes such as ophelia, storm, crimes, accomodation etc.</p>
+<p>In our data, we have likes, shares and comments counts for each of the posts. A field popularity is created with the sum of the 3 fields in order for further processing to form a dataframe which will contain all the aggregates</p>
+<pre lang="{r}"><code>#Suchandra Mandal
+### set of most relevant keywords as selected from choose and count dataframe 
+words &lt;- c('kayaking','investigating', 'crimes', 'damage', 'missing', 
+           'crowned', 'garda', 'support', 'football', 'nationwide', 
+           'accomodation', 'defence', 'ophelia', 'christmas', 'emergency',
+           'festival', 'storm')
+
+clean_data$Popularity &lt;- clean_data$likes_count + clean_data$comments_count + 
+                          clean_data$shares_count
+</code></pre>
+<h2><a id="user-content-3-filtering-relevant-posts" class="anchor" aria-hidden="true" href="#3-filtering-relevant-posts"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3. Filtering Relevant posts</h2>
+<p>According to the relevant keywords which have been stored in vector 'words', the posts having the keywords are filtered with the likes, comments, shares and popularity data stored in a new dataframe called posts_store.</p>
+<pre lang="{r}"><code>#Suchandra Mandal
+N &lt;- 236
+posts_store &lt;- data.frame(keyword = NA, Posts = NA, 
+                          Popularity = integer(N),
+                          likes = integer(N), comments = integer(N), 
+                          shares = integer(N))
+
+# storing the relevant posts containing the keywords in a dataframe along with comments, likes, shares and popularity count
+k &lt;- 1
+  for (j in words){
+    for (i in clean_data$message){
+      if (sum(grepl(j, i)) == 1){
+        data &lt;- clean_data[clean_data$message == i,]
+        posts_store$keyword[k] &lt;- j
+        posts_store$Posts[k] &lt;- i
+        posts_store$Popularity[k] &lt;- data$Popularity
+        posts_store$likes[k] &lt;- data$likes_count
+        posts_store$comments[k] &lt;- data$comments_count
+        posts_store$shares[k] &lt;- data$shares_count
+        k = k+1
+      
+    }
+  }
+}
+
+</code></pre>
+<h2><a id="user-content-4-aggregating-the-data-of-the-relevant-posts" class="anchor" aria-hidden="true" href="#4-aggregating-the-data-of-the-relevant-posts"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>4. Aggregating the data of the relevant posts</h2>
+<p>using the relevant posts dataset, we now obtain the count of posts with the keywords selected and then inner join with the posts_store dataset to keep count of posts along with relevant posts. Since keywords will repeat for may posts, counts will be repeated too. While aggregating, we need to be careful of that.</p>
+<pre lang="{r}"><code>#Ashfaque Azad
+# Summing up the posts with the keywords
+keywords_count &lt;- posts_store %&gt;% group_by(keyword) %&gt;% summarise(Posts_Count = n())
+
+# Inner joining the keywords count with posts, to get counts in our dataset
+posts_store &lt;- inner_join(posts_store, keywords_count, by = "keyword")
+
+# For each of the keywords, arranging the rows of dataframe in descending order of the Popularity of the keyword.
+posts_store &lt;- posts_store %&gt;% group_by(keyword) %&gt;% arrange(keyword,desc(Popularity))
+
+# Writing out this aggregated dataset as a csv
+  # write.csv(posts_store,"posts_store.csv")
+
+
+# aggregate popularity of all policy keywords
+best_policy &lt;- posts_store %&gt;% group_by(keyword) %&gt;% 
+  summarise(Sum_popularity = sum(Popularity)) %&gt;% arrange(desc(Sum_popularity))
+
+</code></pre>
+<h2><a id="user-content-5-visualisation-of-the-results" class="anchor" aria-hidden="true" href="#5-visualisation-of-the-results"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>5. Visualisation of the Results:</h2>
+<p>The visualisations we have worked on are based on:
+a. Sentiment Analysis
+b. Finding most popular keywords
+c. A word cloud based on trending keywords
+d. Showing the most popular posts for each keyword as a table
+e. Comparison word cloud to show correlated words with each of the keywords chosen</p>
+<p>Let's start with sentiment analysis. Here, we wanted to take a look at what are people's sentiments mostly at an average for the posts posted on facebook connacht tribune and galway today.
+To do sentiment analysis, we have used the sentimentr package and found the sentiments of people for the selected posts related to the keywords shortlisted before.</p>
+<h2><a id="user-content-a-sentiment-analysis-and-visualisation" class="anchor" aria-hidden="true" href="#a-sentiment-analysis-and-visualisation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>a. Sentiment Analysis and Visualisation</h2>
+<pre lang="{r}"><code>#Suchandra Mandal
+# Using sentiment function to score the posts
+s &lt;- sentiment(posts_store$Posts)
+
+# Since each post has several lines and sentiments are given at a line basis in the previous line, I have summarised the sentiments at an element_id level which is basically at each post level
+s &lt;- s %&gt;% group_by(element_id) %&gt;% summarise(sentiment = sum(sentiment))
+
+# Storing the sentiments as a separate column in posts_store
+posts_store$Sentiment &lt;- s$sentiment
+
+
+# For the graph, we first need to prepare the data
+
+# Creating a flag called sentiment_type to classify sentiments as negative or positive
+posts_store$sentiment_type &lt;- ifelse(posts_store$Sentiment &lt; 0, 
+                                            "negative", "positive")   
+
+# sorting the rows of posts_store in order of sentiment value in ascending order
+posts_store &lt;- posts_store[order(posts_store$Sentiment), ]  
+
+# convert to factor to retain sorted order in plot.
+#posts_store$Posts &lt;- factor(posts_store$Posts, levels = posts_store$Posts)  
+
+# Using Diverging Barcharts to visualise sentiments of people
+ggplot(data = posts_store) +
+  geom_bar(aes(x= posts_store$keyword, 
+               y = posts_store$Sentiment,
+              fill=posts_store$sentiment_type), 
+           stat = 'identity', width=.5) + coord_flip() + 
+  ggtitle("Sentiments of people across different keywords") +
+  xlab("Sentiment Score") + ylab("Keywords") +
+  scale_fill_discrete(name = "Sentiment Type")
+
+</code></pre>
+<p>Observation: From above graph, we can see that people post mostly positive sentiments and positive sentiments far outweight those of negative</p>
+<h2><a id="user-content-b-finding-most-popular-keywords-and-visualise-them" class="anchor" aria-hidden="true" href="#b-finding-most-popular-keywords-and-visualise-them"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>b. Finding most popular keywords and visualise them</h2>
+<p>Based on popularity of the keywords chosen the next bar graph is generated. Here, we use popularity index which is the sum of shares, comments and likes count for all posts under the particular keyword.</p>
+<pre lang="{r}"><code>#Suchandra Mandal
+options(scipen = 999)  # turns of scientific notations like 1e+40
+
+
+
+# getting the best keywords by inner joining the most popular posts dataframe and best policy in order to have the most popular keywords along with their popularity and sentiment values
+
+# The top posts in terms of popularity with respect to a keyword is stored here
+most_popular_posts &lt;- posts_store %&gt;% group_by(keyword) %&gt;% top_n(1,Popularity)
+
+best &lt;- inner_join(best_policy, most_popular_posts, by = "keyword") %&gt;%
+  arrange(desc(Sum_popularity))
+
+# Plot
+ggplot(best, aes(x = keyword, y = Sum_popularity, fill = "#FF6666")) +   
+  geom_bar(stat = "identity", width = .6) +  
+  coord_flip() +  # Flip axes
+  labs(title="Popularity Count of various keywords") +
+  theme_tufte() +  # Tufte theme from ggfortify
+  theme(plot.title = element_text(hjust = .5), 
+        axis.ticks = element_blank()) +   # Centre plot title
+  scale_fill_brewer(palette = "Dark2")  # Color palette
+
+</code></pre>
+<p>As expected, words such as storm which has all terms of Ophelia, Eleanor and recent rainstorms are most common followed by support and festival which could be due to the St. Patrick's day which occurred recently.</p>
+<h2><a id="user-content-c-a-word-cloud-based-on-trending-keywords" class="anchor" aria-hidden="true" href="#c-a-word-cloud-based-on-trending-keywords"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>c. A word cloud based on trending keywords</h2>
+<p>Next, based on the posts of relevant posts subset before, we made a corpus object of the posts of facebook and removed all unnecessary words such as stopwords, numbers etc and then plotted a wordmap with 2 options. The first wordmap is based on the maximum number of words to show while the second limits the overly common words by putting a threshold on maximum frequency of the word in posts.</p>
+<pre lang="{r}"><code>#Ashfaque Azad
+library(wordcloud)
+
+# converting the posts dataframe to a corpus object
+corpusdata &lt;- Corpus(VectorSource( posts_store$Posts))
+
+# Removing stopwords, punctuations, numbers and a few words from the corpus
+corpus &lt;- tm_map(corpusdata, removeWords, stopwords("english"))
+corpus &lt;- tm_map(corpus, removePunctuation)
+corpus &lt;- tm_map(corpus, removeNumbers)
+
+corpus &lt;- tm_map(corpus, removeWords, c(letters, 'galway','will','day',
+                                        'today', 'city','thursday')) 
+
+
+# Creating a term document matrix of the corpus
+dtm &lt;-TermDocumentMatrix(corpus,
+    control = list(weighting = function(x) weightTfIdf(x, normalize = TRUE)))
+
+
+# looking out the correlated terms for flood
+findAssocs(dtm, terms = "flood", corlimit = 0.5)
+
+# creating a word cloud with maximum 200 words shown
+wordcloud(words = corpus,
+          max.words=200, random.order=FALSE, rot.per=0.35,
+          colors=brewer.pal(8, "Dark2"))
+
+# We can also visualise the word cloud based on frequency of words
+wordcloud(words=corpus,max.freq = 200, scale=c(5,0.75), random.order=FALSE, rot.per=0.35, use.r.layout=FALSE, colors=brewer.pal(8, "Dark2"))
+
+</code></pre>
+<h2><a id="user-content-d-showing-the-most-popular-posts-for-each-keyword-as-a-table" class="anchor" aria-hidden="true" href="#d-showing-the-most-popular-posts-for-each-keyword-as-a-table"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>d. Showing the most popular posts for each keyword as a table</h2>
+<p>This dataframe was already aggregated before. Just printing out the table here.
+The most popular post under each keyword was filtered based on popularity index and displayed as a table</p>
+<pre lang="{r}"><code>#Ashfaque Azad
+library(kableExtra)
+knitr::kable(most_popular_posts[, 1:2], "html") %&gt;% kableExtra::kable_styling("striped") 
+</code></pre>
+<h2><a id="user-content-e-comparison-word-cloud-to-show-correlated-words-with-each-of-the-keywords-chosen" class="anchor" aria-hidden="true" href="#e-comparison-word-cloud-to-show-correlated-words-with-each-of-the-keywords-chosen"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>e. Comparison word cloud to show correlated words with each of the keywords chosen</h2>
+<p>Finally, we wanted to take a look at the associated words with each of the 4 keywords we have chosen to display. A correlation threshold was placed to extract the most meaningful terms associated with each of the keywords. As we can see, with crimes keyword we have computer, track, spread etc .</p>
+<pre lang="{r}"><code>#Ashfaque Azad
+# We selected the 4 keywords for comparison which looked most promising
+
+#Defence
+defence &lt;-findAssocs(dtm, terms = "defence", corlimit = 0.3)[[1]]
+defence
+defence &lt;- cbind(read.table(text = names(defence), stringsAsFactors = FALSE),defence)
+
+defence$V1[1:12]
+defencev1 &lt;- Corpus(VectorSource(defence$V1))
+
+#wordcloud(words = defencev1, random.order=FALSE, scale=c(1,0.75), colors = brewer.pal(4, "Dark2"))
+
+#crimes
+crimes&lt;- findAssocs(dtm, terms = "crimes", corlimit = 0.4)[[1]]
+crimes
+crimes &lt;- cbind(read.table(text = names(crimes), stringsAsFactors = FALSE), crimes)
+
+crimes$V1
+crimesv1 &lt;- Corpus(VectorSource(crimes$V1))
+
+#wordcloud(words = crimesv1, random.order=FALSE, scale=c(1,0.75), colors = brewer.pal(4, "Dark2"))
+#storm
+storm&lt;-findAssocs(dtm, terms = "storm", corlimit = 0.30)[[1]]
+storm
+storm &lt;- cbind(read.table(text = names(storm), stringsAsFactors = FALSE), storm)
+
+storm$V1
+stormv1 &lt;- Corpus(VectorSource(storm$V1))
+
+#wordcloud(words = stormv1, random.order=FALSE, scale=c(1,0.75), colors = brewer.pal(4, "Dark2"))
+#ophelia
+ophelia &lt;- findAssocs(dtm, terms = "ophelia", corlimit = 0.30)[[1]]
+ophelia
+ophelia &lt;- cbind(read.table(text = names(ophelia), stringsAsFactors = FALSE), ophelia)
+
+ophelia$V1
+opheliav1 &lt;- Corpus(VectorSource(ophelia$V1))
+
+#wordcloud(words = christmasv1, random.order=FALSE, scale=c(1,0.75), colors = brewer.pal(4, "Dark2"))
+
+classic4 &lt;- c(defence$V1[1:12],crimes$V1[1:12],storm$V1[1:12], ophelia$V1[1:12])
+classic4
+classic4 &lt;- Corpus(VectorSource(classic4))
+
+classic4.tdm &lt;- TermDocumentMatrix(classic4)
+library(magrittr)
+facebook.tdm.matrix &lt;- classic4.tdm %&gt;% as.matrix()
+f &lt;- sort(rowSums(facebook.tdm.matrix),decreasing=TRUE)
+d &lt;- data.frame(word = names(f),freq=f)
+
+
+defence &lt;- rowSums(facebook.tdm.matrix[,1:12])
+crimes &lt;- rowSums(facebook.tdm.matrix[,13:24])
+storm &lt;- rowSums(facebook.tdm.matrix[,25:36]) 
+ophelia &lt;-rowSums(facebook.tdm.matrix[,37:48])
+
+# create a data frame
+classic.summary &lt;- data.frame(defence,crimes,storm, ophelia)
+# scale the columns so that larger corpii don't dominate
+classic.summary.scaled &lt;- scale(classic.summary[,1:4],center=FALSE, scale=colSums(classic.summary[,1:4]))
+
+par(mfrow=c(1,1))
+comparison.cloud(classic.summary.scaled,scale=c(1,0.75), random.order=FALSE, colors= c('#66c2a5','#fc8d62','#8da0cb','#e78ac3','#a6d854'),
+                 title.size=1.5)
+
+</code></pre>
+</article>
+  </div>
+
+  </div>
+
+  <button type="button" data-facebox="#jump-to-line" data-facebox-class="linejump" data-hotkey="l" class="d-none">Jump to Line</button>
+  <div id="jump-to-line" style="display:none">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-jump-to-line-form" action="" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+      <input class="form-control linejump-input js-jump-to-line-field" type="text" placeholder="Jump to line&hellip;" aria-label="Jump to line" autofocus>
+      <button type="submit" class="btn">Go</button>
+</form>  </div>
+
+
+  </div>
+  <div class="modal-backdrop js-touch-events"></div>
+</div>
+
+    </div>
+  </div>
+
+  </div>
+
+      
+<div class="footer container-lg px-3" role="contentinfo">
+  <div class="position-relative d-flex flex-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+    <ul class="list-style-none d-flex flex-wrap ">
+      <li class="mr-3">&copy; 2018 <span title="0.29954s from unicorn-50794656-vd7tf">GitHub</span>, Inc.</li>
+        <li class="mr-3"><a data-ga-click="Footer, go to terms, text:terms" href="https://github.com/site/terms">Terms</a></li>
+        <li class="mr-3"><a data-ga-click="Footer, go to privacy, text:privacy" href="https://github.com/site/privacy">Privacy</a></li>
+        <li class="mr-3"><a href="https://help.github.com/articles/github-security/" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li class="mr-3"><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+        <li><a data-ga-click="Footer, go to help, text:help" href="https://help.github.com">Help</a></li>
+    </ul>
+
+    <a aria-label="Homepage" title="GitHub" class="footer-octicon" href="https://github.com">
+      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
+   <ul class="list-style-none d-flex flex-wrap ">
+        <li class="mr-3"><a data-ga-click="Footer, go to contact, text:contact" href="https://github.com/contact">Contact GitHub</a></li>
+      <li class="mr-3"><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li class="mr-3"><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li class="mr-3"><a href="https://shop.github.com" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li class="mr-3"><a href="https://blog.github.com" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a data-ga-click="Footer, go to about, text:about" href="https://github.com/about">About</a></li>
+
+    </ul>
+  </div>
+  <div class="d-flex flex-justify-center pb-6">
+    <span class="f6 text-gray-light"></span>
+  </div>
+</div>
+
+
+
+  <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"/></svg>
+    <button type="button" class="flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+      <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+    </button>
+    You can’t perform that action at this time.
+  </div>
+
+
+    
+    <script crossorigin="anonymous" integrity="sha512-yNr0q+cdUZ7oyTrEbVbhiYGFYmrAMbaxySSMyAyKD/aeBDYeT5Ljsi7D5VN2pTojNgRVWAwNwv1ub03StbDwhg==" type="application/javascript" src="https://assets-cdn.github.com/assets/frameworks-cae483278a9c7126c25f62f25f2cfb95.js"></script>
+    
+    <script crossorigin="anonymous" async="async" integrity="sha512-YBL5z5N/FrULI3iliWfs8FIdEHe1xg5r7gPOmks4aFWbPKNRCIo9eVysQriaVQj1SrYp7ry4xDADok2cWkiemA==" type="application/javascript" src="https://assets-cdn.github.com/assets/github-dea53a441a0d30d1d86626e99f9f7872.js"></script>
+    
+    
+    
+    
+  <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner d-none">
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.865 1.52c-.18-.31-.51-.5-.87-.5s-.69.19-.87.5L.275 13.5c-.18.31-.18.69 0 1 .19.31.52.5.87.5h13.7c.36 0 .69-.19.86-.5.17-.31.18-.69.01-1L8.865 1.52zM8.995 13h-2v-2h2v2zm0-3h-2V6h2v4z"/></svg>
+    <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+  </div>
+  <div class="facebox" id="facebox" style="display:none;">
+  <div class="facebox-popup">
+    <div class="facebox-content" role="dialog" aria-labelledby="facebox-header" aria-describedby="facebox-description">
+    </div>
+    <button type="button" class="facebox-close js-facebox-close" aria-label="Close modal">
+      <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"/></svg>
+    </button>
+  </div>
+</div>
+
+  <div class="Popover js-hovercard-content position-absolute" style="display: none; outline: none;" tabindex="0">
+  <div class="Popover-message Popover-message--bottom-left Popover-message--large Box box-shadow-large" style="width:360px;">
+  </div>
+</div>
+
+<div id="hovercard-aria-description" class="sr-only">
+  Press h to open a hovercard with more details.
+</div>
+
+
+  </body>
+</html>
+
